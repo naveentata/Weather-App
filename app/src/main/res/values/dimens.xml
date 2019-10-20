@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="imageViewWidth">173dp</dimen>
+    <dimen name="nameEndTextView">8dp</dimen>
+    <dimen name="imageViewHeight">173dp</dimen>
+    <dimen name="imageViewmarginStart">8dp</dimen>
+    <dimen name="imageViewMarginTop">24dp</dimen>
+    <dimen name="nameMarginStart">8dp</dimen>
+    <dimen name="nameMarginTop">8dp</dimen>
+    <dimen name="rollMarginStart">8dp</dimen>
+    <dimen name="rollMarginEnd">8dp</dimen>
+    <dimen name="bracnchMarginStart">8dp</dimen>
+    <dimen name="branchMarginEnd">8dp</dimen>
+    <dimen name="branchMarginBottom">8dp</dimen>
+    <dimen name="scrollWidth">330dp</dimen>
+    <dimen name="scrollHeight">326dp</dimen>
+    <dimen name="srollMarginStart">8dp</dimen>
+    <dimen name="scrollMarginTop">8dp</dimen>
+    <dimen name="scrollMarginEnd">8dp</dimen>
+    <dimen name="scrollMarginBottom">8dp</dimen>
+    <dimen name="welcome_txtMarginTop">24dp</dimen>
+    <dimen name="welcome_txtTextSize">30sp</dimen>
+</resources>

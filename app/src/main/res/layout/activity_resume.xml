@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".Resume">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/imageViewWidth"
+        android:layout_height="@dimen/imageViewHeight"
+        android:layout_marginStart="@dimen/imageViewmarginStart"
+        android:layout_marginTop="@dimen/imageViewMarginTop"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nameMarginStart"
+        android:layout_marginTop="@dimen/nameMarginTop"
+        android:layout_marginEnd="@dimen/nameEndTextView"
+        android:text="@string/name_naveen_tata"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/roll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rollMarginStart"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/rollMarginEnd"
+        android:text="Rollno : U4CSE16063"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/bracnchMarginStart"
+        android:layout_marginEnd="@dimen/branchMarginEnd"
+        android:layout_marginBottom="@dimen/branchMarginBottom"
+        android:text="Branch : CSE "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/roll" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="@dimen/scrollWidth"
+        android:layout_height="@dimen/scrollHeight"
+        android:layout_marginStart="@dimen/srollMarginStart"
+        android:layout_marginTop="@dimen/scrollMarginTop"
+        android:layout_marginEnd="@dimen/scrollMarginEnd"
+        android:layout_marginBottom="@dimen/scrollMarginBottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/about_head"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT ME\n"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open Source Enthusiast. Python programmer, Motivated and highly professional individual with two years of experience in Machine Learning academic research and personal projects. Looking forward to challenging roles that require \n" />
+
+            <TextView
+                android:id="@+id/ach_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACHIEVEMENTS\n"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ach_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Awarded full scholarship for summer school at Ben-Gurion University, Israel\n* Selected as a one among the 47 ﬁnalists from 1900+ applicants for Philips Data Science Hackathon\n* Runner Up in the Hackathon conducted by Amrita University as a part of Vidyut,Kollam\n" />
+
+            <TextView
+                android:id="@+id/skill_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SKILLS\n"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/skill_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" C\nPython\nJava\nHTMLandCSS\nKeras\nTensorﬂow\nGit\nDjango\nPostgresql\nBootstrap\n" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

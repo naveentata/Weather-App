@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">weatherapp</string>
+    <string name="action_settings">Settings</string>
+    <string name="name_naveen_tata">Name : Naveen Tata</string>
+</resources>
